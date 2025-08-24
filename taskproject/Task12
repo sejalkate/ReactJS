@@ -1,0 +1,16 @@
+function Task12(){
+    //Given an array of words, return them in uppercase but only if they have more than 4 letters.
+    const fruits=["apple","kivi","cherry","banana","papaya","watermelon"];
+    const upper=fruits.filter(word=>word.length>4).map(word=>word.toUpperCase());
+    return(
+        <>
+        <h3 style={{color:"green"}}>Task 12:Uppercase the words having length greater than 4 in array.</h3>
+        {
+            upper.map((u,index)=>
+            <li key={index}>{u}</li>)
+        }
+        </>
+
+    );
+}
+export default Task12;
